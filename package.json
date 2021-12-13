@@ -1,8 +1,8 @@
 {
-  "name": "mall_vue",
+  "name": "drone-cli",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "陈哲宇 <1452100100@qq.com>",
+  "author": "dream.shou",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
