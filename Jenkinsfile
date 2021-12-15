@@ -1,16 +1,19 @@
-
 pipeline{
     agent any
     stages{
         stage("first stage"){
-            steps("first steps"){
-                echo "this is first step"
+            stages{  // 嵌套在stage里
+                stage("inside"){
+                    steps{
+                        echo "inside"
+                    }
+                }
             }
         }
-    }
-    post{
-        always{
-            echo "this is ending..."
+        stage("stage2"){
+            steps{
+                echo "outside"
+            }
         }
     }
 }
