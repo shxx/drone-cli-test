@@ -2,7 +2,7 @@ pipeline{
     agent any
     stage('Checkout') {
          steps {
-             echo ">>>>>>>> Checkout branch ${params.BRANCH}"
+             echo ">>>>>>>> Checkout branch dev"
          }
     }
 }
