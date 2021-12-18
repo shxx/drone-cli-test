@@ -1,8 +1,10 @@
 pipeline{
     agent any
-    stage('Checkout') {
-         steps {
-             echo ">>>>>>>> Checkout branch dev"
-         }
+    stages {
+        stage('Checkout') {
+            steps {
+                echo ">>>>>>>> Checkout branch dev"
+            }
+        }
     }
 }
